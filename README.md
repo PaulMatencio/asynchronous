@@ -3,6 +3,7 @@
 This is the repo for [Udacity's Ajax course](). The course covers making asynchronous requests using three different methods:
 
 * the XHR object
+* New Tricks in XMLHttpRequest2 [https://www.html5rocks.com/en/tutorials/file/xhr2/]
 * jQuery's `.ajax()` method
 * the Fetch API
 
