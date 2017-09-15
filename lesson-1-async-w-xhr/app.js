@@ -12,7 +12,7 @@
         /* unsplash API */
         const unsplashRequest = new XMLHttpRequest();
         unsplashRequest.open('GET', `https://api.unsplash.com/search/photos?page=1&query=${searchedForText}`);
-
+        // 'https://api.unsplash.com/search/photos?page=1&query=flower'
         unsplashRequest.onload = addImage;
         unsplashRequest.onerror = function(err) {
           console.log(err,"image");
