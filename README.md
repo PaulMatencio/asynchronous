@@ -1,10 +1,10 @@
 # Asynchronous request and Promise
 
-This is a solution  of the [Udacity's Ajax course]()  [https://www.udacity.com/course/asynchronous-javascript-requests--ud109]
-and adds new Promise to wrap  XHR Object and promise chaining  Fetch API which is not part of the course
+This repos contains the solution  of the [Udacity's Ajax course]()  [https://www.udacity.com/course/asynchronous-javascript-requests--ud109]
+It adds javascript Promise to wrap (and chain) XHR Object and Fetch API
 The course covers making asynchronous requests using three different methods:
 
-## Part of the course
+## Asynchronous request ( part of the course)
 
 * the XHR object [async-w-fetch]
 * jQuery's `.ajax()` method [async-w-jQuery]
@@ -17,13 +17,12 @@ The course covers making asynchronous requests using three different methods:
 * [https://github.com/richardkalehoff](https://github.com/richardkalehoff)
 
 ### Contributors
-** Paul Matencio **
+** Paul Matencio**
 
+# Promise ( not part of the course)
 
-
-## Not part of the course
-
-* Wrap XHR Object with promise function  [promise-w-hxr]
+* Wrap XHR and chain Object with promise function  [promise-w-hxr]
 * Wrap and Chain Fetch API   [ promises-chaining-w-fetch]
-### creators 
+
+### creators of the promises
 *** Paul Matencio **
