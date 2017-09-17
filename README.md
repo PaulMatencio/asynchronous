@@ -1,26 +1,29 @@
-# Ajax
+# Asynchronous request and Promise
 
-This is the repo for [Udacity's Ajax course](). The course covers making asynchronous requests using three different methods:
+This is a solution  of the [Udacity's Ajax course]()  [https://www.udacity.com/course/asynchronous-javascript-requests--ud109]
+and adds new Promise to wrap  XHR Object and promise chaining  Fetch API which is not part of the course
+The course covers making asynchronous requests using three different methods:
 
-* the XHR object
-* New Tricks in XMLHttpRequest2 [https://www.html5rocks.com/en/tutorials/file/xhr2/]
-* jQuery's `.ajax()` method
-* the Fetch API
+## Part of the course
 
-The same project is built with each of these techniques. You'll find one folder for each.
+* the XHR object [async-w-fetch]
+* jQuery's `.ajax()` method [async-w-jQuery]
+* the Fetch API    [asynch-w-fetch]
 
-## Table of Contents
-
-* [Instructions](#instructions)
-* [Creator](#creators)
-
-## Instructions
-
-There are no special instructions for this project.
-
-## Creators
+### Creators of the Course
 
 **Richard Kalehoff**
-
 * [https://twitter.com/richardkalehoff](https://twitter.com/richardkalehoff)
 * [https://github.com/richardkalehoff](https://github.com/richardkalehoff)
+
+### Contributors
+** Paul Matencio **
+
+
+
+## Not part of the course
+
+* Wrap XHR Object with promise function  [promise-w-hxr]
+* Wrap and Chain Fetch API   [ promises-chaining-w-fetch]
+### creators 
+*** Paul Matencio **

@@ -15,7 +15,7 @@
         // 'https://api.unsplash.com/search/photos?page=1&query=flower'
         unsplashRequest.onload = addImage;
         unsplashRequest.onerror = function(err) {
-          console.log(err,"image");
+          requestError(err,"image");
         }
         unsplashRequest.setRequestHeader('Authorization', 'Client-ID 7ea30f97ca6d7ede1ff375ac191cf045dbd918f206f6cdabfcf8c214d85f993e');
         unsplashRequest.send();
@@ -28,7 +28,7 @@
         nytRequest.onload = addArticles;
 
         nytRequest.onerror = function(err) {
-          console.log(err,"nyt");
+          requestError(err,"nyt");
         }
 
         nytRequest.send();
@@ -62,6 +62,12 @@
               htmlContent = '<div class="error-no-articles"> No articles available</div>';
       }
       responseContainer.insertAdjacentHTML('afterbegin',htmlContent);
+    }
+
+    function requestError(error, part) {
+       console.log(error,part);
+       let htmlContent = `<p class="network-earning-error">${error} ${part} </p>`
+       responseContainer.insertAdjacentHTML('beforeend',htmlContent);
     }
 
 })();

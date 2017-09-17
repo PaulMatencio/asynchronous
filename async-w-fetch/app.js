@@ -1,3 +1,10 @@
+
+/*
+
+    https://davidwalsh.name/fetch
+
+*/
+
 (function () {
     const form = document.querySelector('#search-form');
     const searchField = document.querySelector('#search-keyword');
@@ -19,7 +26,7 @@
           .then(addImage)
           .catch( error => requestError(error,'images'))
 
-          
+
         // request for artickles
 
         const nytSearchKey = "72f579b41d55f0fac5b79ab556ba913f:1:73683129";
@@ -61,7 +68,7 @@
 
    function requestError(error, part) {
       console.log(error,part);
-      let htmlContent = `<p class="network-earning-error">${e} ${part} </p>`
+      let htmlContent = `<p class="network-earning-error">${error} ${part} </p>`
       responseContainer.insertAdjacentHTML('beforeend',htmlContent);
    }
 

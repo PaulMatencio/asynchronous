@@ -75,9 +75,8 @@
       responseContainer.insertAdjacentHTML('afterbegin',htmlContent);
     }
 
-    function requestError(e, part){
-      console.log(e,part);
-      let htmlContent = `<p class="network-earning-error">${e} ${part} </p>`
+    function requestError(error, part){
+      let htmlContent = `<p class="network-earning-error">${error} ${part} </p>`
       responseContainer.insertAdjacentHTML('beforeend',htmlContent);
     }
 
